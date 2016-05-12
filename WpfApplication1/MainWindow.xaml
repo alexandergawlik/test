@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Logowanie" Height="350" Width="525" ResizeMode="NoResize">
+
+    <Grid Background="Aqua">
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Background="Beige">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition/>
+                <RowDefinition/>
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Logowanie do systemu" Grid.Row="0" HorizontalAlignment="Center" Grid.ColumnSpan="2" FontSize="30" VerticalAlignment="Center"/>
+            <TextBlock Text="Użytkownik" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <TextBlock Text="Hasło" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Button Content="Wyjście" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="3" Grid.Column="0" Margin="54,0" Click="Button_Click" MinWidth="150"/>
+            <Button Content="Start" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1" Margin="62,0" Click="Button_Click_1" MinWidth="150"/>
+            <PasswordBox x:Name="txt_password" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"  MinWidth="150"/>
+            <TextBox x:Name="txt_user" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" MinWidth="150"/>
+        </Grid>
+    </Grid>
+</Window>

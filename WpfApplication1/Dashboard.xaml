@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApplication1.Dashboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dashboard" Height="300" Width="300" WindowState="Maximized" >
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            
+            
+            <MenuItem Header="Baza">
+                <MenuItem x:Name="menu_przegladanie" Header="Przeglądanie" Click="menuwybierzZakladke_Click"/>
+                <MenuItem Header="Dodawanie"/>
+                <MenuItem Header="Aktualizacja"/>
+                <Separator/>
+                <MenuItem x:Name="menu_wyjscie" Header="Wyjście" Click="menu_wyjscie_Click"/>
+            </MenuItem>
+            <MenuItem Header="Pomoc">
+                <MenuItem Header="Wyświetl pomoc"/>
+                <MenuItem Header="O programie"/>
+            </MenuItem>
+        </Menu>
+        <TabControl>
+            
+            <TabItem Header="Przeglądanie"/>
+            <TabItem Header="Aktualizacja"/>
+            <TabItem Header="Dodawanie"/>
+        </TabControl>
+
+    </DockPanel>
+</Window>
